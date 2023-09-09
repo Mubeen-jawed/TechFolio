@@ -22,7 +22,7 @@ const FeatureBox = () => {
         style={{ height: "360px" }}
         onMouseOver={() => setOnHover(true)}
         onMouseOut={() => setOnHover(false)}
-        // data-aos="fade-up"
+        data-aos="fade-up"
       >
         <div className=" flex flex-col items-center w-full">
           <div className="w-3/4 h-full justify-center flex flex-col ">

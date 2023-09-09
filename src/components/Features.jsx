@@ -26,10 +26,7 @@ const Features = () => {
         </h1>
       </div>
 
-      <div
-        data-aos="fade-up"
-        className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-7 gap-y-14 place-items-center h-full mt-9"
-      >
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-7 gap-y-14 place-items-center h-full mt-9">
         <FeatureBox />
         <FeatureBox />
         <FeatureBox />
