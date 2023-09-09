@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div
       id="home"
-      className="max-w-7xl pt-24 max-[450px]:p-16 xl:m-auto flex flex-col-reverse lg:flex-row font-secondary items-center justify-center h-full mt-24"
+      className="max-w-7xl pt-24 max-[450px]:pt-14 xl:m-auto flex flex-col-reverse lg:flex-row font-secondary items-center justify-center h-full mt-24"
     >
       <div className="home-wrapper-1 md:w-2/3 w-full p-5 xl:pt-20">
         <div className="flex flex-col justify-center">
