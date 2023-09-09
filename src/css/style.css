@@ -35,6 +35,10 @@ input:-webkit-autofill:active {
   box-shadow: 10px 10px 19px #17181b, -10px -10px 19px #2b2e33;
 }
 
+.navbar-shadow {
+  box-shadow: 5px 5px 10px #1a1b1f, -10px -10px 19px #2b2e33;
+}
+
 /* .btn-shadow-hover:hover {
   box-shadow: 10px 10px 19px #17181b, -10px -10px 19px #2b2e33;
 } */

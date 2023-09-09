@@ -7,7 +7,7 @@ const BlogBox = () => {
     <>
       <div
         className={` rounded-3xl btn-shadow feature-box text-gray-300 font-secondary flex flex-col items-center justify-center `}
-        style={{ height: "420px", width: "91%" }}
+        style={{ height: "420px", width: "100%" }}
       >
         <div className="">
           <img

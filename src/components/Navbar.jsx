@@ -10,31 +10,41 @@ import { FiLinkedin } from "react-icons/fi";
 const Navbar = (props) => {
   const [hireMeClick, setHireMeClick] = useState(false);
   const [hamBurgerClick, setHamBurgerClick] = useState(false);
-  const [showing, setShowing] = useState(false);
+  // const [showing, setShowing] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setShowing(true);
-      } else {
-        setShowing(false);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-  });
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY > 100) {
+  //       setShowing(true);
+  //     } else {
+  //       setShowing(false);
+  //     }
+  //   };
+  //   window.addEventListener("scroll", handleScroll);
+  // });
 
   // console.log(props.bodyClick);
+  // `${
+  //   showing ? "fixed" : "null"
+  // }
   return (
     <div
-      className={`${
-        showing ? "fixed" : "null"
-      }navbar items-center fixed top-0 z-40  w-full flex text-stone-100 justify-around h-24`}
+      className={`
+       
+        navbar items-center fixed top-0 z-40 navbar-shadow w-full flex text-stone-100 justify-around h-24 max-[450px]:h-16`}
       style={{ backgroundColor: "#212428" }}
       id="navbar"
     >
       {/* {console.log(showing)} */}
 
-      <div className="nav-first-wrapper">Marketing Agency</div>
+      <a href="/" className="nav-first-wrapper pl-2">
+        <img
+          src="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/08/logo.png"
+          alt="profile-img"
+          className=""
+          style={{ minWidth: "70px" }}
+        />
+      </a>
 
       <div className="nav-second-wrapper" style={{ width: "60%" }}>
         <ul className="hidden xl:flex nav-second-wrapper justify-evenly font-secondary text-sm text-gray-300">
@@ -117,10 +127,10 @@ const Navbar = (props) => {
       <div className="nav-third-wrapper xl:w-1/6 w-72 flex justify-around items-center">
         <button
           style={{ backgroundColor: "#1c1f23" }}
-          className="btn-shadow relative rounded-full flex justify-center items-center p-3 transition-all duration-300 text-lg bg-black"
+          className="max-[450px]:p-2 btn-shadow relative rounded-full flex justify-center items-center p-3 transition-all duration-300 text-lg bg-black"
         >
-          <AiOutlineShoppingCart />
-          <div className="bg-red-600 w-4 h-4 text-xs rounded-full font-bold flex justify-center items-center text-center absolute -top-1 -right-1">
+          <AiOutlineShoppingCart className="max-[450px]:text-sm" />
+          <div className="bg-red-600 w-4 h-4 text-xs rounded-full font-bold flex justify-center items-center text-center absolute -top-1 -right-1 max-[450px]:-right-2 max-[450px]:-top-2">
             <p>0</p>
           </div>
         </button>
@@ -130,7 +140,7 @@ const Navbar = (props) => {
             setHireMeClick(true);
             props.onHireMeClick(hireMeClick);
           }}
-          className="red-text transition-all duration-500 sm:w-28 hover:mb-2 w-20 rounded-md text-xs py-3 btn-shadow mr-3 sm:ml-8 sm:mr-6 ml-3 sm:font-light font-primary sm:text-sm tracking-widest "
+          className="red-text transition-all duration-500 sm:w-28 hover:mb-2 w-20 max-[450px]:w-20 max-[450px]:font-light max-[450px]:py-2 rounded-md text-xs py-3 btn-shadow mr-2 sm:ml-8 sm:mr-6 ml-3 sm:font-light font-primary sm:text-sm tracking-widest "
         >
           HIRE ME
         </button>
@@ -232,10 +242,10 @@ const Navbar = (props) => {
         </div>
 
         <button
-          className="text-red-600 xl:hidden m-3 p-3 text-lg rounded-full btn-shadow"
+          className="red-text xl:hidden m-3 p-3 max-[450px]:p-2 text-lg rounded-full btn-shadow"
           onClick={() => setHamBurgerClick(true)}
         >
-          <GiHamburgerMenu />
+          <GiHamburgerMenu className="max-[450px]:text-sm" />
         </button>
 
         {/* Small screen navbar UI */}

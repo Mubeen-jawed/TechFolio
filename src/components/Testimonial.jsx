@@ -1,18 +1,25 @@
 import React from "react";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { AiOutlineArrowRight } from "react-icons/ai";
-// import { FcRating } from "react-icons/fc";
 
-// import Seperator from "./Seperator";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import the CSS for AOS
+
+AOS.init({
+  duration: 400, // Duration of animations in milliseconds
+  offset: 10, // Offset (in pixels) from the bottom of the window to trigger animations
+  easing: "ease-in-out",
+  once: true,
+});
 
 const Testimonial = () => {
   // const [nextBtnClick, setNextBtnClick] = useState(false);
 
   return (
-    <div id="testimonial">
+    <div id="testimonial" data-aos="fade-up">
       {/* Heading */}
 
-      <div className="text-center mb-16">
+      <div className="text-center mb-10 ">
         <h6 className="red-text tracking-widest text-sm font-thin">
           WHAT CLIENTS SAY
         </h6>
@@ -22,12 +29,7 @@ const Testimonial = () => {
       </div>
 
       <div className="w-full flex justify-center items-center flex-col">
-        {""}
-        {/* <main
-          className={` flex `}
-          style={{ overflow: "hidden" }}
-        > */}
-        <div className="flex justify-center lg:flex-row flex-col gap-x-10 px-10 items-center w-screen grid-cols-2 xl:m-auto max-w-7xl">
+        <div className="flex justify-center lg:flex-row flex-col gap-x-10 p-5 items-center w-screen grid-cols-2 xl:m-auto max-w-7xl">
           {/* First Container */}
 
           <div className="testimonial-first-container feature-box btn-shadow xl:w-3/4 xl:p-8 p-5 rounded-md flex lg:flex-col sm:flex-row flex-col lg:mb-0 mb-8 lg:items-start items-center">
@@ -103,11 +105,12 @@ const Testimonial = () => {
               </div>
 
               <div className="">
-                <p className="w-full text-gray-400 font-primary md:text-lg text-base leading-7">
-                  Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac
-                  dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet
-                  sem in, lobortis mauris hendrerit ante. Ut tincidunt est ac
-                  dolor aliquam sodales phasellus smauris test
+                <p className="w-full text-gray-400 font-medium font-primary md:text-lg text-base leading-7">
+                  Throughout the development process, communication was
+                  seamless. I was kept informed at every stage, and any
+                  questions or concerns I had were addressed promptly. The team
+                  was highly professional and responsive, making it a
+                  collaborative and enjoyable partnership.
                 </p>
               </div>
             </div>

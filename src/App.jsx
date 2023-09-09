@@ -16,7 +16,7 @@ import { AiOutlineArrowUp } from "react-icons/ai";
 
 const App = () => {
   const [bodyClick, setBodyClick] = useState(false);
-  const [onHireMeClick, setOnHireMeClick] = useState(false);
+  const [onHireMeClick, setOnHireMeClick] = useState(true);
 
   const hireMeClick = (childStateValue) => {
     setOnHireMeClick(childStateValue);

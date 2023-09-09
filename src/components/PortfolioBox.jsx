@@ -21,7 +21,7 @@ const PortfolioBox = () => {
   return (
     <>
       <div
-        className="p-6 rounded-xl btn-shadow h-full w-11/12 feature-box text-gray-300 font-secondary flex flex-col items-center justify-center "
+        className="p-6 rounded-xl btn-shadow h-full w-full feature-box text-gray-300 font-secondary flex flex-col items-center justify-center "
         // style={{ height: "100%", width: "91%" }}
         data-aos="fade-up"
       >

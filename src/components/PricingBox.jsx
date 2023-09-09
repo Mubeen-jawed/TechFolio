@@ -2,6 +2,15 @@ import React, { useState } from "react";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import { FiActivity } from "react-icons/fi";
 import { BiRightArrowAlt } from "react-icons/bi";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import the CSS for AOS
+
+AOS.init({
+  duration: 400, // Duration of animations in milliseconds
+  offset: 10, // Offset (in pixels) from the bottom of the window to trigger animations
+  easing: "ease-in-out",
+  once: true,
+});
 
 const PricingBox = () => {
   const [handleStatic, setHandleStatic] = useState(true);
@@ -9,7 +18,7 @@ const PricingBox = () => {
   const [handlePremimum, setHandlePremimum] = useState(false);
 
   return (
-    <div className="lg:w-7/12 w-full p-5 lg:p-0 lg:mr-6">
+    <div className="lg:w-7/12 w-full p-5 lg:p-0 lg:mr-6" data-aos="fade-up">
       <div
         className="w-full h-full btn-shadow font-secondary flex flex-col rounded-xl"
         style={{}}
