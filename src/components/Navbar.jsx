@@ -31,7 +31,7 @@ const Navbar = (props) => {
     <div
       className={`
        
-        navbar items-center fixed top-0 z-40 navbar-shadow w-full flex text-stone-100 justify-around h-24 max-[450px]:h-16`}
+        navbar items-center fixed top-0 z-40 navbar-shadow w-full flex text-stone-100 justify-around h-24 max-[450px]:h-20`}
       style={{ backgroundColor: "#212428" }}
       id="navbar"
     >
