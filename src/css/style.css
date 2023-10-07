@@ -67,7 +67,7 @@ input:-webkit-autofill:active {
   font-weight: 600;
 }
 
-.feature-box::before {
+/* .feature-box::before {
   content: "";
   position: absolute;
   top: 0;
@@ -82,7 +82,7 @@ input:-webkit-autofill:active {
 
 .feature-box:hover::before {
   opacity: 1;
-}
+} */
 
 /* .feature-box:hover .text {
   color: #ff014f;

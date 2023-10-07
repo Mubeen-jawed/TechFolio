@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
-import { FiFacebook } from "react-icons/fi";
+import { FiGithub } from "react-icons/fi";
 import { FiTwitter } from "react-icons/fi";
 import { FiLinkedin } from "react-icons/fi";
 
@@ -124,8 +124,8 @@ const Navbar = (props) => {
         </ul>
       </div>
 
-      <div className="nav-third-wrapper xl:w-1/6 w-72 flex justify-around items-center">
-        <button
+      <div className="nav-third-wrapper xl:w-1/6 fl w-96 flex justify-around items-center">
+        {/* <button
           style={{ backgroundColor: "#1c1f23" }}
           className="max-[450px]:p-2 btn-shadow relative rounded-full flex justify-center items-center p-3 transition-all duration-300 text-lg bg-black"
         >
@@ -133,16 +133,16 @@ const Navbar = (props) => {
           <div className="bg-red-600 w-4 h-4 text-xs rounded-full font-bold flex justify-center items-center text-center absolute -top-1 -right-1 max-[450px]:-right-2 max-[450px]:-top-2">
             <p>0</p>
           </div>
-        </button>
+        </button> */}
 
         <button
           onClick={() => {
             setHireMeClick(true);
             props.onHireMeClick(hireMeClick);
           }}
-          className="red-text transition-all duration-500 sm:w-28 hover:mb-2 w-20 max-[450px]:w-20 max-[450px]:font-light max-[450px]:py-2 rounded-md text-xs py-3 btn-shadow mr-2 sm:ml-8 sm:mr-6 ml-3 sm:font-light font-primary sm:text-sm tracking-widest "
+          className="red-text transition-all duration-500 sm:w-32 hover:mb-2 w-22 max-[450px]:w-22 max-[450px]:font-light max-[450px]:py-2 rounded-md text-[10px] py-3 px-2 sm:px-0 btn-shadow mr-2 sm:ml-8 sm:mr-6 ml-3 sm:font-light font-primary sm:text-sm tracking-wider "
         >
-          HIRE ME
+          CONTACT ME
         </button>
 
         {/* Hire Me Button Click UI */}
@@ -369,24 +369,27 @@ const Navbar = (props) => {
               find with me
             </h6>
             <div className="flex w-56 justify-evenly mt-7">
-              <button
+              <a
+                href="https://github.com/Mubeen-jawed"
                 className="w-14 h-14 rounded-md text-xl flex justify-center items-center"
                 style={{ backgroundColor: "#212428" }}
               >
-                <FiFacebook />
-              </button>
-              <button
+                <FiGithub />
+              </a>
+              <a
+                href="https://twitter.com/Mubeenjawed2"
                 className="w-14 h-14 rounded-md text-xl flex justify-center items-center"
                 style={{ backgroundColor: "#212428" }}
               >
                 <FiTwitter />
-              </button>
-              <button
+              </a>
+              <a
+                href="https://www.linkedin.com/in/mubeen-jawed-7b5062231"
                 style={{ backgroundColor: "#212428" }}
                 className="w-14 h-14 rounded-md text-xl flex justify-center items-center"
               >
                 <FiLinkedin />
-              </button>
+              </a>
             </div>
           </div>
         </div>

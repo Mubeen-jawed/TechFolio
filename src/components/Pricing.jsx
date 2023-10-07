@@ -19,7 +19,7 @@ const Pricing = () => {
       data-aos="fade-up"
     >
       <div className="mb-10 lg:mb-0 sm:text-left text-center">
-        <p className="red-text  tracking-widest lg:text-sm text-xs font-thin font-primary">
+        <p className="red-text  tracking-widest lg:text-sm text-xs font-medium font-primary">
           PRICING
         </p>
         <h1 className="lg:text-5xl xl:text-6xl text-4xl font-secondary text-gray-300 font-bold mt-3">
