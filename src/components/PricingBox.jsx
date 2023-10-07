@@ -34,7 +34,7 @@ const PricingBox = () => {
               handleStatic ? "pricing-btn-click" : null
             } px-3 flex-1 py-8 max-[500px]:w-full transition-all duration-500 rounded-md pricing-btn text-white`}
           >
-            Static
+            Basic
           </button>
           <button
             onClick={() => {

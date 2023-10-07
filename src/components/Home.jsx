@@ -1,7 +1,8 @@
 import React from "react";
-import { FiFacebook } from "react-icons/fi";
+import { FiGithub } from "react-icons/fi";
 import { FiTwitter } from "react-icons/fi";
 import { FiLinkedin } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -17,16 +18,16 @@ const Home = () => {
           <h1 className="text-white lg:text-6xl text-4xl font-bold mb-3">
             Hi, I’m{" "}
             <span style={{ color: "#ff014f" }} className="text-red-700">
-              Muddasir
+              Mubeen
             </span>
           </h1>
           <h2 className="lg:text-5xl text-3xl text-white font-semibold">
-            a Social Media Expert
+            a MERN Developer
           </h2>
           <p className="w-full text-gray-300 mt-8 lg:text-lg text-md leading-8 lg:leading-9">
-            I use animation as a third dimension by which to simplify
-            experiences and kuiding thro each and every interaction. I’m not
-            adding motion just to spruce things up, but doing it in ways that.
+            I am a MERN stack developer skilled in building full-stack web
+            applications. I specialize in MongoDB, Express.js, React, and
+            Node.js to create robust and dynamic online experiences.
           </p>
         </div>
 
@@ -35,19 +36,22 @@ const Home = () => {
             <p>FIND WITH ME</p>
             <div className="flex w-72 justify-evenly mt-7">
               <a
-                href="https://www.facebook.com/mubeen.jawed.376"
+                href="https://github.com/Mubeen-jawed"
+                target="_blank"
                 className="w-16 h-16 feature-box rounded-md btn-shadow text-2xl flex justify-center items-center"
               >
-                <FiFacebook />
+                <FiGithub />
               </a>
               <a
                 href="https://twitter.com/Mubeenjawed2"
+                target="_blank"
                 className="w-16 h-16 feature-box rounded-md btn-shadow text-2xl flex justify-center items-center"
               >
                 <FiTwitter />
               </a>
               <a
-                href="https://www.linkedin.com/in/mubeen-jawed-7b5062231/"
+                href="https://www.linkedin.com/in/mubeen-jawed-7b5062231"
+                target="_blank"
                 className="w-16 h-16 feature-box rounded-md btn-shadow text-2xl flex justify-center items-center"
               >
                 <FiLinkedin />
@@ -60,21 +64,21 @@ const Home = () => {
               <button className="w-16 h-16 cursor-default rounded-md btn-shadow text-2xl flex justify-center items-center">
                 <img
                   width={"22px"}
-                  src="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/08/icons-01.png"
+                  src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
                   alt=""
                 />
               </button>
               <button className="w-16 h-16 cursor-default rounded-md btn-shadow text-2xl flex justify-center items-center">
                 <img
                   width={"22px"}
-                  src="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/08/icons-02.png"
+                  src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/233_Node_Js_logo-256.png"
                   alt=""
                 />
               </button>
               <button className="w-16 h-16 cursor-default rounded-md btn-shadow text-2xl flex justify-center items-center">
                 <img
-                  width={"22px"}
-                  src="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/08/icons-03.png"
+                  width={"32px"}
+                  src="https://cdn.iconscout.com/icon/free/png-512/free-mongodb-5-1175140.png?f=webp&w=256"
                   alt=""
                 />
               </button>

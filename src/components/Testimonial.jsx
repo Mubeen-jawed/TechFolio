@@ -20,7 +20,7 @@ const Testimonial = () => {
       {/* Heading */}
 
       <div className="text-center mb-10 ">
-        <h6 className="red-text tracking-widest text-sm font-thin">
+        <h6 className="red-text tracking-widest text-sm font-medium">
           WHAT CLIENTS SAY
         </h6>
         <h1 className="font-bold lg:text-6xl md:text-5xl text-4xl mt-3 text-gray-300 font-secondary">
@@ -42,7 +42,7 @@ const Testimonial = () => {
             </div>
 
             <div className="h-28 sm:ml-6 ml-0 mt-4 flex flex-col justify-evenly w-3/4 items-start">
-              <small className="red-text text-xs font-thin tracking-widest">
+              <small className="red-text text-xs font-medium tracking-widest">
                 RAINBOW-THEMES
               </small>
               <div className="h-16 flex flex-col w-56 justify-between">
