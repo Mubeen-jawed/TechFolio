@@ -2,6 +2,9 @@ import React from "react";
 import { FiGithub } from "react-icons/fi";
 import { FiTwitter } from "react-icons/fi";
 import { FiLinkedin } from "react-icons/fi";
+import { Link } from "react-scroll";
+import profilePhoto from "../assets/profile.png";
+
 // import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -9,14 +12,19 @@ const Footer = () => {
     <div className="max-w-7xl xl:m-auto h-full">
       <div className="flex justify-center sm:flex-row flex-col w-full">
         <div className="max-[450px]:pl-3 flex sm:flex-col max-[450px]:flex-col max-[500px]:items-start flex-row justify-evenly sm:justify-center sm:items-start items-center w-full sm:w-1/4 mb-9">
-          <div className="xl:pl-5 pl-3">
+          <a href="/" className="nav-first-wrapper pl-3 flex items-center">
             <img
-              src="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/08/logo.png"
+              src={profilePhoto}
               alt="profile-img"
-              className=""
+              className="w-10"
+              style={{ minWidth: "70px" }}
             />
-            {/* <h4>MUBEEN</h4> */}
-          </div>
+
+            <h4 className="text-lg pl-2 text-white uppercase tracking-wider font-medium font-primary">
+              Mubeen
+            </h4>
+          </a>
+
           <div className="flex justify-evenly sm:w-full w-3/12 max-[500px]:w-2/5 mt-7 text-gray-400">
             <a
               href="https://github.com/Mubeen-jawed"
@@ -47,36 +55,65 @@ const Footer = () => {
               QUICK LINKS
             </h3>
             <div className="flex flex-col text-gray-400 max-[450px]:text-lg lg:text-lg sm:text-md text-sm font-semibold">
-              <a
-                className=" hover:text-red-600 font-normal hover:underline transition-all duration-500"
-                href="#"
+              <Link
+                activeClass="active"
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                className="cursor-pointer hover:text-red-600 font-normal hover:underline transition-all duration-500"
               >
-                About
-              </a>
-              <a
-                className="mt-3 hover:text-red-600 font-normal hover:underline transition-all duration-500"
-                href="#"
+                Home
+              </Link>
+
+              <Link
+                activeClass="active"
+                to="features"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                className="cursor-pointer mt-3 hover:text-red-600 font-normal hover:underline transition-all duration-500"
+              >
+                Features
+              </Link>
+
+              <Link
+                activeClass="active"
+                to="portfolio"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                className="cursor-pointer mt-3 hover:text-red-600 font-normal hover:underline transition-all duration-500"
               >
                 Portfolio
-              </a>
-              <a
-                className="mt-3 hover:text-red-600 font-normal hover:underline transition-all duration-500"
-                href="#"
+              </Link>
+
+              <Link
+                activeClass="active"
+                to="pricing"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                className="cursor-pointer mt-3 hover:text-red-600 font-normal hover:underline transition-all duration-500"
               >
-                Services
-              </a>
-              <a
-                className="mt-3 hover:text-red-600 font-normal hover:underline transition-all duration-500"
-                href="#"
+                Pricing
+              </Link>
+
+              <Link
+                activeClass="active"
+                to="blog"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                className="cursor-pointer mt-3 hover:text-red-600 font-normal hover:underline transition-all duration-500"
               >
                 Blog
-              </a>
-              <a
-                className="mt-3 hover:text-red-600 font-normal hover:underline transition-all duration-500"
-                href="#"
-              >
-                Contact
-              </a>
+              </Link>
             </div>
           </div>
           <div className="max-[500px]:mb-10">

@@ -182,9 +182,12 @@ const PricingBox = () => {
             </div>
 
             <div className="flex flex-col w-full justify-center items-center md:mt-16 sm:mt-10 mt-6">
-              <button className="feature-box flex justify-center items-center inner-shadow-effect w-full sm:h-16 h-12 rounded-lg btn-shadow transition-all duration-200 red-text tracking-wider text-sm">
+              <a
+                href="https://www.upwork.com/freelancers/~01b54706f53e1f0a1d"
+                className="feature-box flex justify-center items-center inner-shadow-effect w-full sm:h-16 h-12 rounded-lg btn-shadow transition-all duration-200 red-text tracking-wider text-sm"
+              >
                 ORDER NOW <BiRightArrowAlt className="text-" />
-              </button>
+              </a>
               <div className="text-gray-400 text-xs flex max-[500px]:flex-col max-[500px]:w-full font-semibold mt-7 mb-1">
                 <h6 className="flex mr-4">
                   <AiOutlineClockCircle className="mr-2" />2 Days Delivery

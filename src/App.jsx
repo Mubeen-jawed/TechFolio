@@ -54,7 +54,7 @@ const App = () => {
         duration={500}
       >
         <button
-          className="w-12 h-12 flex justify-center items-center rounded-full btn-shadow fixed red-text text-xl md:bottom-12 bottom-4 z-10 sm:left-8 left-5"
+          className="w-12 h-12 flex justify-center items-center rounded-full btn-shadow fixed red-text text-xl md:bottom-12 bottom-4 z-10 sm:right-8 right-5"
           style={{ backgroundColor: "#212428" }}
         >
           <AiOutlineArrowUp />

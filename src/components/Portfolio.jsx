@@ -1,6 +1,6 @@
 import React from "react";
 import PortfolioBox from "./PortfolioBox";
-import portfolio1 from "../css/portfolio1.png";
+import portfolio1 from "../assets/portfolio.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import the CSS for AOS
@@ -35,20 +35,23 @@ const Portfolio = () => {
         <PortfolioBox
           type="external link"
           text="Ecommerce Fashion Website"
-          img="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/08/portfolio-large-02-340x250.jpg"
+          img={portfolio1}
           likes="14"
+          linkTo="https://mubeen-jawed.github.io/Ecommerce-clothes-website/"
         />
         <PortfolioBox
           type="external link"
           text="Quiz Builder Application"
           img="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/08/portfolio-large-02-340x250.jpg"
           likes="6"
+          linkTo="https://mubeen-jawed.github.io/Ecommerce-clothes-website/"
         />
         <PortfolioBox
           type="external link"
           text="Notes Keeping Application"
           img="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/08/portfolio-large-02-340x250.jpg"
           likes="9"
+          linkTo="https://mubeen-jawed.github.io/Ecommerce-clothes-website/"
         />
         {/* <PortfolioBox />
         <PortfolioBox />
