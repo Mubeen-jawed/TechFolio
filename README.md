@@ -5,7 +5,6 @@
 
 <p align="center">
   <kbd>
-    ![video](https://github.com/Mubeen-jawed/techfolio/assets/110166209/d35e07ea-68e0-466f-a4f7-dc6fc894c92d)
     <img src="https://github.com/Mubeen-jawed/techfolio/assets/110166209/d35e07ea-68e0-466f-a4f7-dc6fc894c92d"></img>
   </kbd>
 </p>
