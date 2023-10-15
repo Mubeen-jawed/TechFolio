@@ -18,7 +18,7 @@ const PricingBox = () => {
   const [handlePremimum, setHandlePremimum] = useState(false);
 
   return (
-    <div className="lg:w-7/12 w-full p-5 lg:p-0 lg:mr-6" data-aos="fade-up">
+    <div className="lg:w-7/12 w-full p-5 lg:p-0 lg:mr-6 " data-aos="fade-up">
       <div
         className="w-full h-full btn-shadow font-secondary flex flex-col rounded-xl"
         style={{}}
@@ -85,8 +85,7 @@ const PricingBox = () => {
 
             <div>
               <p className="text-gray-400 font-primary sm:text-lg text-md leading-8 font-normal max-[500px]:w-10/12 w-full">
-                All the Lorem Ipsum generators on the Internet tend to repeat
-                predefined chunks as necessary
+                5 page website creation with best SEO Practices.
               </p>
             </div>
 

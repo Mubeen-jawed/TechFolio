@@ -81,6 +81,18 @@ const Navbar = (props) => {
             <li>
               <Link
                 activeClass="active"
+                to="resume"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                RESUME
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
                 to="portfolio"
                 spy={true}
                 smooth={true}
@@ -312,6 +324,19 @@ const Navbar = (props) => {
                     onClick={() => setHamBurgerClick(false)}
                   >
                     FEATURES
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    activeClass="active"
+                    to="resume"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    onClick={() => setHamBurgerClick(false)}
+                  >
+                    RESUME
                   </Link>
                 </li>
                 <li>

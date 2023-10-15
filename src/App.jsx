@@ -9,6 +9,7 @@ import Portfolio from "./components/Portfolio";
 import Testimonial from "./components/Testimonial";
 import Blog from "./components/Blog";
 import Pricing from "./components/Pricing";
+import Resume from "./components/resume/Resume";
 import Footer from "./components/Footer";
 
 import { Link } from "react-scroll";
@@ -32,6 +33,8 @@ const App = () => {
       <Seperator />
       <Features />
       <Seperator />
+      <Resume />
+      <Seperator />
       <Portfolio />
       <Seperator />
       {/* <Testimonial />
@@ -42,9 +45,18 @@ const App = () => {
       <Seperator />
       <Footer />
       <Seperator />
-      {/* <div className="flex justify-center items-center w-full h-full pb-5">
-        <p className=" text-xl text-gray-400">© 2023. All rights reserved by Rainbow-Themes</p>
-      </div> */}
+      <div className="flex justify-center items-center w-full h-full pb-5 px-3">
+        <p className=" sm:text-xl text-sm text-gray-400">
+          © 2023. Developed By Mubeen Jawed | Design By{" "}
+          <a
+            className="underline"
+            target="_blank"
+            href="https://rainbowit.net/"
+          >
+            Rainbowit.net
+          </a>{" "}
+        </p>
+      </div>
       <Link
         activeClass="active"
         to="home"

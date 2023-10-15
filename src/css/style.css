@@ -125,6 +125,14 @@ textarea {
     -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
 }
 
+.progress-bar-shadow {
+  box-shadow: inset 8px 8px 16px #00000075, inset -8px -8px 16px #383e4575;
+}
+
+.progress-bar-inner-color {
+  background: linear-gradient(145deg, #6a67c0 0%, #fc636b 100%);
+}
+
 /* .inner-shadow-effect {
   box-shadow: (to right bottom, #212428, #16181c);
 } */
