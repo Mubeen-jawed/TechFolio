@@ -1,4 +1,4 @@
-# Software Developer Folio ⚡️
+# TechFolio ⚡️
 
 ## A clean, beautiful and responsive portfolio template for Developers!
 
@@ -33,11 +33,11 @@ Created something awesome for your fork of the portfolio and want to share it? F
 ✔️ Summary and About me\
 ✔️ Features (What services you provide)\
 ✔️ Portfolio\
+✔️ Resume\
 ✔️ Testimonial\
 ✔️ Pricing\
 ✔️ Blogs\
-✔️ Twitter Timeline\
-✔️ GitHub Profile
+✔️ Footer\
 
 To view a live example, **[click here](https://mubeen-jawed.vercel.app/)**.
 
