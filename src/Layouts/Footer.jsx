@@ -2,6 +2,8 @@ import React from "react";
 import { FiGithub } from "react-icons/fi";
 import { FiTwitter } from "react-icons/fi";
 import { FiLinkedin } from "react-icons/fi";
+
+import profilePhoto from "../css/profile-img.svg";
 // import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -10,11 +12,18 @@ const Footer = () => {
       <div className="flex justify-center sm:flex-row flex-col w-full">
         <div className="max-[450px]:pl-3 flex sm:flex-col max-[450px]:flex-col max-[500px]:items-start flex-row justify-evenly sm:justify-center sm:items-start items-center w-full sm:w-1/4 mb-9">
           <div className="xl:pl-5 pl-3">
-            <img
-              src="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/08/logo.png"
-              alt="profile-img"
-              className=""
-            />
+            <a href="/" className="nav-first-wrapper pl-3 flex items-center">
+              <img
+                src={profilePhoto}
+                alt="profile-img"
+                className="w-10"
+                style={{ minWidth: "70px" }}
+              />
+
+              <h4 className="sm:text-lg text-white text-md pl-2 uppercase tracking-wider font-normal font-primary">
+                Mubeen
+              </h4>
+            </a>{" "}
             {/* <h4>MUBEEN</h4> */}
           </div>
           <div className="flex justify-evenly sm:w-full w-3/12 max-[500px]:w-2/5 mt-7 text-gray-400">
@@ -106,7 +115,7 @@ const Footer = () => {
                 className="mt-3 hover:text-red-600 font-normal hover:underline transition-all duration-500"
                 href="#"
               >
-                Pricingt
+                Pricing
               </a>
               <a
                 className="mt-3 hover:text-red-600 font-normal hover:underline transition-all duration-500"

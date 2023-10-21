@@ -4,7 +4,6 @@ import { FiArrowUpRight } from "react-icons/fi";
 // import ScrollAnimation from "react-animate-on-scroll";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import the CSS for AOS
-import portfolio1 from "../css/portfolio1.png";
 
 const PortfolioBox = (props) => {
   const [onHover, setOnHover] = useState(false);

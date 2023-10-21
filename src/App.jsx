@@ -1,15 +1,16 @@
 import React, { useState } from "react";
-import "./css/style.css";
-import "./css/script";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import Features from "./components/Features";
-import Seperator from "./components/Seperator";
-import Portfolio from "./components/Portfolio";
-import Testimonial from "./components/Testimonial";
-import Blog from "./components/Blog";
-import Pricing from "./components/Pricing";
-import Footer from "./components/Footer";
+import "./assets/style.css";
+import "./assets/script";
+import Navbar from "./Layouts/Navbar";
+import Home from "./components/Home/Home";
+import Features from "./components/Features/Features";
+import Seperator from "./Elements/Seperator";
+import Portfolio from "./components/Portfolio/Portfolio";
+import Resume from "./components/Resume/Resume";
+import Testimonial from "./components/Testimonial/Testimonial";
+import Blog from "./components/Blog/Blog";
+import Pricing from "./components/Pricing/Pricing";
+import Footer from "./Layouts/Footer";
 
 import { Link } from "react-scroll";
 import { AiOutlineArrowUp } from "react-icons/ai";
@@ -32,10 +33,12 @@ const App = () => {
       <Seperator />
       <Features />
       <Seperator />
+      <Resume />
+      <Seperator />
       <Portfolio />
       <Seperator />
-      {/* <Testimonial />
-      <Seperator /> */}
+      <Testimonial />
+      <Seperator />
       <Pricing />
       <Seperator />
       <Blog />
@@ -54,7 +57,7 @@ const App = () => {
         duration={500}
       >
         <button
-          className="w-12 h-12 flex justify-center items-center rounded-full btn-shadow fixed red-text text-xl md:bottom-12 bottom-4 z-10 sm:left-8 left-5"
+          className="w-12 h-12 flex justify-center items-center rounded-full btn-shadow fixed red-text text-xl md:bottom-12 bottom-4 z-10 sm:right-8 right-5"
           style={{ backgroundColor: "#212428" }}
         >
           <AiOutlineArrowUp />

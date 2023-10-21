@@ -18,13 +18,15 @@ const Pricing = () => {
       className="flex justify-between lg:flex-row flex-col w-full max-w-7xl xl:m-auto"
       data-aos="fade-up"
     >
-      <div className="mb-10 lg:mb-0 sm:text-left text-center">
-        <p className="red-text  tracking-widest lg:text-sm text-xs font-medium font-primary">
-          PRICING
-        </p>
-        <h1 className="lg:text-5xl xl:text-6xl text-4xl font-secondary text-gray-300 font-bold mt-3">
-          My Pricing
-        </h1>
+      <div className="mb-10 lg:mb-0 sm:text-left text-center ">
+        <div className="sticky top-56">
+          <p className="red-text  tracking-widest lg:text-sm text-xs font-medium font-primary">
+            PRICING
+          </p>
+          <h1 className=" lg:text-5xl xl:text-6xl text-4xl font-secondary text-gray-300 font-bold mt-3">
+            My Pricing
+          </h1>
+        </div>
       </div>
 
       <PricingBox />
