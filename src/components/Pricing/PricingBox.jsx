@@ -12,13 +12,25 @@ AOS.init({
   once: true,
 });
 
-const PricingBox = () => {
+const PricingBox = (content) => {
   const [handleStatic, setHandleStatic] = useState(true);
   const [handleStandard, setHandleStandard] = useState(false);
   const [handlePremimum, setHandlePremimum] = useState(false);
 
+  const {
+    basicTitle,
+    basicPrice,
+    basicDescription,
+    standardTitle,
+    standardPrice,
+    standardDescription,
+    premiumTitle,
+    premiumPrice,
+    premiumDescription,
+  } = content;
+
   return (
-    <div className="lg:w-7/12 w-full p-5 lg:p-0 lg:mr-6" data-aos="fade-up">
+    <div className="lg:w-7/12 w-full  lg:p-0 lg:mr-6" data-aos="fade-up">
       <div
         className="w-full h-full btn-shadow font-secondary flex flex-col rounded-xl"
         style={{}}
@@ -69,24 +81,23 @@ const PricingBox = () => {
             <div className="flex justify-between lg:flex-row flex-col mb-10 max-[500px]:mb-5">
               <div>
                 <h2 className="sm:text-3xl text-2xl font-bold text-gray-300 leading-9">
-                  Make Your Single Page
+                  {basicTitle}
                 </h2>
-                <p className="text-gray-500 mt-02 xl:text-lg text-md">
+                {/* <p className="text-gray-500 mt-02 xl:text-lg text-md">
                   Elementor / WPBakery
-                </p>
+                </p> */}
               </div>
 
               <button className="xl:w-44 sm:w-36 sm:h-16 xl:h-20 w-32 h-14 max-[500px]:w-24 max-[500px]:h-10 flex justify-center items-center cursor-default rounded-lg btn-shadow lg:ml-4 mt-6 max-[500px]:mt-3 lg:mt-0">
                 <span className="sm:text-3xl text-2xl max-[500px]:text-lg red-text font-primary">
-                  $30.00
+                  ${basicPrice}.00
                 </span>
               </button>
             </div>
 
             <div>
               <p className="text-gray-400 font-primary sm:text-lg text-md leading-8 font-normal max-[500px]:w-10/12 w-full">
-                All the Lorem Ipsum generators on the Internet tend to repeat
-                predefined chunks as necessary
+                {basicDescription}
               </p>
             </div>
 
@@ -137,24 +148,23 @@ const PricingBox = () => {
             <div className="flex justify-between lg:flex-row flex-col mb-10 max-[500px]:mb-5">
               <div>
                 <h2 className="sm:text-3xl text-2xl font-bold text-gray-300 leading-9">
-                  Make Your Single Page
+                  {standardTitle}
                 </h2>
-                <p className="text-gray-500 mt-02 xl:text-lg text-md">
+                {/* <p className="text-gray-500 mt-02 xl:text-lg text-md">
                   Elementor / WPBakery
-                </p>
+                </p> */}
               </div>
 
               <button className="xl:w-44 sm:w-36 sm:h-16 xl:h-20 w-32 h-14 max-[500px]:w-24 max-[500px]:h-10 flex justify-center items-center cursor-default rounded-lg btn-shadow lg:ml-4 mt-6 max-[500px]:mt-3 lg:mt-0">
                 <span className="sm:text-3xl text-2xl max-[500px]:text-lg red-text font-primary">
-                  $50.00
+                  ${standardPrice}.00
                 </span>
               </button>
             </div>
 
             <div>
               <p className="text-gray-400 font-primary sm:text-lg text-md leading-8 font-normal max-[500px]:w-10/12 w-full">
-                All the Lorem Ipsum generators on the Internet tend to repeat
-                predefined chunks as necessary
+                {standardDescription}
               </p>
             </div>
 
@@ -205,24 +215,23 @@ const PricingBox = () => {
             <div className="flex justify-between lg:flex-row flex-col mb-10 max-[500px]:mb-5">
               <div>
                 <h2 className="sm:text-3xl text-2xl font-bold text-gray-300 leading-9">
-                  Make Your Single Page
+                  {premiumTitle}
                 </h2>
-                <p className="text-gray-500 mt-02 xl:text-lg text-md">
+                {/* <p className="text-gray-500 mt-02 xl:text-lg text-md">
                   Elementor / WPBakery
-                </p>
+                </p> */}
               </div>
 
               <button className="xl:w-44 sm:w-36 sm:h-16 xl:h-20 w-32 h-14 max-[500px]:w-24 max-[500px]:h-10 flex justify-center items-center cursor-default rounded-lg btn-shadow lg:ml-4 mt-6 max-[500px]:mt-3 lg:mt-0">
                 <span className="sm:text-3xl text-2xl max-[500px]:text-lg red-text font-primary">
-                  $100.00
+                  ${premiumPrice}.00
                 </span>
               </button>
             </div>
 
             <div>
               <p className="text-gray-400 font-primary sm:text-lg text-md leading-8 font-normal max-[500px]:w-10/12 w-full">
-                All the Lorem Ipsum generators on the Internet tend to repeat
-                predefined chunks as necessary
+                {premiumDescription}
               </p>
             </div>
 

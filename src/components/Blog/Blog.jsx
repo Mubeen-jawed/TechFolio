@@ -11,7 +11,22 @@ AOS.init({
   once: true,
 });
 
-const Blog = () => {
+const Blog = (content) => {
+  const {
+    box1Img,
+    box1Title,
+    box1Miuntes,
+    box1Category,
+    box2Img,
+    box2Title,
+    box2Miuntes,
+    box2Category,
+    box3Img,
+    box3Title,
+    box3Miuntes,
+    box3Category,
+  } = content;
+
   return (
     <div
       style={{ maxWidth: "1320px" }}
@@ -32,22 +47,23 @@ const Blog = () => {
         style={{ maxWidth: "1320px" }}
       >
         <BlogBox
-          topic="What are cors and why is it important for browsers?"
-          topicCategory="Technology"
-          time="5"
-          img="https://miro.medium.com/v2/resize:fit:1024/0*zb0GzPvxSsnwuBOu.png"
+          topic={box1Title}
+          topicCategory={box1Category}
+          time={box1Miuntes}
+          img={box1Img}
+        />
+
+        <BlogBox
+          topic={box2Title}
+          topicCategory={box2Category}
+          time={box2Miuntes}
+          img={box2Img}
         />
         <BlogBox
-          topic="Five most amazing React libraries."
-          topicCategory="Discover"
-          time="3"
-          img="https://blog.openreplay.com/images/how-to-build-your-own-react-components-library/images/hero.png"
-        />
-        <BlogBox
-          topic="Best Resources to learn mern stack in 2023."
-          topicCategory="Learn"
-          time="6"
-          img="https://devtechnosys.com/insights/wp-content/uploads/2022/12/Mern-Stack.png"
+          topic={box3Title}
+          topicCategory={box3Category}
+          time={box3Miuntes}
+          img={box3Img}
         />
       </div>
     </div>

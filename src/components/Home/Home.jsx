@@ -3,9 +3,9 @@ import { FiGithub } from "react-icons/fi";
 import { FiTwitter } from "react-icons/fi";
 import { FiLinkedin } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import heroImg from "../../css/hero.svg";
+import heroImg from "../../assets/hero.svg";
 
-const Home = () => {
+const Home = (props) => {
   return (
     <div
       id="home"
@@ -19,16 +19,14 @@ const Home = () => {
           <h1 className="text-white lg:text-6xl text-4xl font-bold mb-3">
             Hi, I’m{" "}
             <span style={{ color: "#ff014f" }} className="text-red-700">
-              Mubeen
+              {props.name}
             </span>
           </h1>
-          <h2 className="lg:text-5xl text-3xl text-white font-semibold">
-            a MERN Developer
+          <h2 className="lg:text-5xl text-3xl text-white font-semibold capitalize">
+            {props.profession}
           </h2>
           <p className="w-full text-gray-300 mt-8 lg:text-lg text-md leading-8 lg:leading-9">
-            I am a MERN stack developer skilled in building full-stack web
-            applications. I specialize in MongoDB, Express.js, React, and
-            Node.js to create robust and dynamic online experiences.
+            {props.aboutMe}
           </p>
         </div>
 
@@ -37,21 +35,21 @@ const Home = () => {
             <p>FIND WITH ME</p>
             <div className="flex w-72 justify-evenly mt-7">
               <a
-                href="https://github.com/Mubeen-jawed"
+                href={props.github}
                 target="_blank"
                 className="w-16 h-16 feature-box rounded-md btn-shadow text-2xl flex justify-center items-center"
               >
                 <FiGithub />
               </a>
               <a
-                href="https://twitter.com/Mubeenjawed2"
+                href={props.twitter}
                 target="_blank"
                 className="w-16 h-16 feature-box rounded-md btn-shadow text-2xl flex justify-center items-center"
               >
                 <FiTwitter />
               </a>
               <a
-                href="https://www.linkedin.com/in/mubeen-jawed-7b5062231"
+                href={props.linkedin}
                 target="_blank"
                 className="w-16 h-16 feature-box rounded-md btn-shadow text-2xl flex justify-center items-center"
               >

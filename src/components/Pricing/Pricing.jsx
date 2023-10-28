@@ -11,11 +11,23 @@ AOS.init({
   once: true,
 });
 
-const Pricing = () => {
+const Pricing = (content) => {
+  const {
+    basicTitle,
+    basicPrice,
+    basicDescription,
+    standardTitle,
+    standardPrice,
+    standardDescription,
+    premiumTitle,
+    premiumPrice,
+    premiumDescription,
+  } = content;
+
   return (
     <div
       id="pricing"
-      className="flex justify-between lg:flex-row flex-col w-full max-w-7xl xl:m-auto"
+      className="flex p-5 justify-between lg:flex-row flex-col w-full max-w-7xl xl:m-auto"
       data-aos="fade-up"
     >
       <div className="mb-10 lg:mb-0 sm:text-left text-center ">
@@ -29,7 +41,17 @@ const Pricing = () => {
         </div>
       </div>
 
-      <PricingBox />
+      <PricingBox
+        basicTitle={basicTitle}
+        basicPrice={basicPrice}
+        basicDescription={basicDescription}
+        standardTitle={standardTitle}
+        standardPrice={standardPrice}
+        standardDescription={standardDescription}
+        premiumTitle={premiumTitle}
+        premiumPrice={premiumPrice}
+        premiumDescription={premiumDescription}
+      />
     </div>
   );
 };

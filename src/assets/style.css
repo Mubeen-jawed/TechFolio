@@ -8,7 +8,8 @@ body {
   background-color: #212428;
   margin: 0;
   padding: 0;
-  /* overflow: hidden; */
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 input:-webkit-autofill,
@@ -19,30 +20,28 @@ input:-webkit-autofill:active {
   -webkit-text-fill-color: rgb(229 231 235);
 }
 
-/* Scrollbar Track */
+/* Scrollbar */
+
 ::-webkit-scrollbar {
   width: 12px;
 }
 
-/* Scrollbar Handle */
 ::-webkit-scrollbar-thumb {
-  background: #333; /* Dark gray color for the handle */
+  background: #333;
   border-radius: 6px;
 }
 
-/* Scrollbar Handle on Hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #3a3a3a; /* Slightly lighter gray on hover */
+  background: #3a3a3a;
 }
 
-/* Scrollbar Track on Hover */
 ::-webkit-scrollbar-track {
-  background: #181a1d; /* Darker background for the track */
+  background: #181a1d;
 }
 
-.overflow-hidden {
+/* .overflow-hidden {
   overflow: hidden;
-}
+} */
 
 .font-primary {
   font-family: "Poppins", sans-serif;
@@ -120,6 +119,25 @@ input:-webkit-autofill:active {
   -webkit-font-smoothing: antialiased;
 }
 
+.hireme {
+  left: 5%;
+  right: 5%;
+}
+
+.pricing-btn:hover {
+  box-shadow: 10px 10px 19px #17181b, -10px -10px 19px #2b2e33;
+  color: #ff014f;
+}
+
+.pricing-btn-click {
+  box-shadow: 10px 10px 19px #17181b, -10px -10px 19px #2b2e33;
+  color: #ff014f;
+}
+
+/* Media Queries */
+
+/* xl */
+
 @media (min-width: 1280px) {
   .testimonial-first-container {
     height: 480px;
@@ -135,6 +153,8 @@ input:-webkit-autofill:active {
     right: 20%;
   }
 }
+
+/* lg */
 
 @media (min-width: 1024px) and (max-width: 1279px) {
   .testimonial-first-container {
@@ -152,6 +172,8 @@ input:-webkit-autofill:active {
   }
 }
 
+/* md */
+
 @media (min-width: 640px) and (max-width: 1023px) {
   .testimonial-first-container {
     width: 100%;
@@ -165,22 +187,4 @@ input:-webkit-autofill:active {
     left: 10%;
     right: 10%;
   }
-}
-
-@media (max-width) {
-}
-
-.hireme {
-  left: 5%;
-  right: 5%;
-}
-
-.pricing-btn:hover {
-  box-shadow: 10px 10px 19px #17181b, -10px -10px 19px #2b2e33;
-  color: #ff014f;
-}
-
-.pricing-btn-click {
-  box-shadow: 10px 10px 19px #17181b, -10px -10px 19px #2b2e33;
-  color: #ff014f;
 }

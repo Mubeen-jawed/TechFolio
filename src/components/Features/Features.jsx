@@ -12,7 +12,16 @@ AOS.init({
   once: true,
 });
 
-const Features = () => {
+const Features = (content) => {
+  const {
+    box1Title,
+    box1Description,
+    box2Title,
+    box2Description,
+    box3Title,
+    box3Description,
+  } = content;
+
   return (
     <div
       id="features"
@@ -29,18 +38,12 @@ const Features = () => {
 
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-7 gap-y-14 place-items-center h-full mt-9">
         <FeatureBox
-          title="Website Development"
-          text="I am a proficient web developer with expertise in crafting websites using a combination of different technologies"
+          title={box1Title}
+          text={box1Description}
           icon="AiOutlineCodepen"
         />
-        <FeatureBox
-          title="Software Development"
-          text="As a MERN stack development specialist, I offer expertise in crafting robust and dynamic web applications."
-        />
-        <FeatureBox
-          title="AI Integration"
-          text="In the realm of AI integration, I specialize in seamlessly merging artificial intelligence solutions into your existing systems and processes."
-        />
+        <FeatureBox title={box2Title} text={box2Description} />
+        <FeatureBox title={box3Title} text={box3Description} />
         {/* <FeatureBox />
         <FeatureBox />
         <FeatureBox /> */}

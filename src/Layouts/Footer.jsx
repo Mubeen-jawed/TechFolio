@@ -3,7 +3,7 @@ import { FiGithub } from "react-icons/fi";
 import { FiTwitter } from "react-icons/fi";
 import { FiLinkedin } from "react-icons/fi";
 
-import profilePhoto from "../css/profile-img.svg";
+import profilePhoto from "../assets/profile-img.svg";
 // import { Link } from "react-router-dom";
 
 const Footer = () => {

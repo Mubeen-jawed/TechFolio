@@ -6,7 +6,7 @@ import { FaTimes } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { FiTwitter } from "react-icons/fi";
 import { FiLinkedin } from "react-icons/fi";
-import profilePhoto from "../css/profile-img.svg";
+import profilePhoto from "../assets/profile-img.svg";
 
 const Navbar = (props) => {
   const [hireMeClick, setHireMeClick] = useState(false);
@@ -29,12 +29,11 @@ const Navbar = (props) => {
   //   showing ? "fixed" : "null"
   // }
   return (
-    <div className="top-0 z-40 w-full navbar navbar-shadow flex justify-evenly items-center fixed">
+    <div className="top-0 z-50 w-full bg-[#212428] navbar navbar-shadow flex justify-evenly items-center fixed">
       <div
         className={`
        
-          flex items-center max-w-7xl w-full justify-evenly text-stone-100  h-24 max-[450px]:h-[86px]`}
-        style={{ backgroundColor: "#212428" }}
+          flex items-center bg-[#212428] max-w-7xl w-full justify-evenly text-stone-100  h-24 max-[450px]:h-[86px]`}
         id="navbar"
       >
         {/* {console.log(showing)} */}
@@ -271,14 +270,14 @@ const Navbar = (props) => {
           <div
             className={`${
               hamBurgerClick ? "opacity-100 " : "opacity-0 invisible"
-            } fixed flex overflow-y-auto flex-col top-0 bottom-0 left-0 py-6 px-10 transition-all duration-500 ease-out mr-10`}
+            } fixed flex overflow-y-auto flex-col top-0 bottom-0 left-0 py-6 px-6 transition-all duration-500 ease-out mr-10`}
             style={{
               backgroundColor: "#191b1e",
               width: "370px",
             }}
           >
-            <div>
-              <div className="flex w-full justify-between items-center">
+            <div className="max-[350px]:w-5/6 w-full">
+              <div className="flex justify-between items-center">
                 <a
                   href="/"
                   className="nav-first-wrapper pl-3 flex items-center"

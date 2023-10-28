@@ -11,7 +11,19 @@ AOS.init({
   once: true,
 });
 
-const Portfolio = () => {
+const Portfolio = (content) => {
+  const {
+    box1Img,
+    box1Title,
+    box1NumOfLikes,
+    box2Img,
+    box2Title,
+    box2NumOfLikes,
+    box3Img,
+    box3Title,
+    box3NumOfLikes,
+  } = content;
+
   return (
     <div
       id="portfolio"
@@ -33,21 +45,21 @@ const Portfolio = () => {
       >
         <PortfolioBox
           type="external link"
-          text="Ecommerce Fashion Website"
-          img="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/08/portfolio-large-02-340x250.jpg"
-          likes="14"
+          text={box1Title}
+          img={box1Img}
+          likes={box1NumOfLikes}
         />
         <PortfolioBox
           type="external link"
-          text="Quiz Builder Application"
-          img="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/08/portfolio-large-02-340x250.jpg"
-          likes="6"
+          text={box2Title}
+          img={box2Img}
+          likes={box2NumOfLikes}
         />
         <PortfolioBox
           type="external link"
-          text="Notes Keeping Application"
-          img="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/08/portfolio-large-02-340x250.jpg"
-          likes="9"
+          text={box3Title}
+          img={box3Img}
+          likes={box3NumOfLikes}
         />
         {/* <PortfolioBox />
         <PortfolioBox />

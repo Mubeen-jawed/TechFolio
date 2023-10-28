@@ -12,8 +12,11 @@ AOS.init({
   once: true,
 });
 
-const Testimonial = () => {
+const Testimonial = (content) => {
   // const [nextBtnClick, setNextBtnClick] = useState(false);
+
+  const { img, name, company, position, title, moreInfo, description, rating } =
+    content;
 
   return (
     <div id="testimonial" data-aos="fade-up">
@@ -36,20 +39,20 @@ const Testimonial = () => {
             <div>
               <img
                 className="rounded-xl m-0 testimonial-img"
-                src="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/08/final-home-1st.png"
+                src={img}
                 alt="testimonial-img"
               />
             </div>
 
             <div className="h-28 sm:ml-6 ml-0 mt-4 flex flex-col justify-evenly w-3/4 items-start">
-              <small className="red-text text-xs font-medium tracking-widest">
-                RAINBOW-THEMES
+              <small className="red-text text-xs font-medium tracking-widest uppercase">
+                {company}
               </small>
               <div className="h-16 flex flex-col w-56 justify-between">
-                <h3 className="lg:text-xl text-2xl w-full font-bold text-gray-300">
-                  Nevine Acotanza
+                <h3 className="lg:text-xl text-2xl w-full font-bold text-gray-300 capitalize">
+                  {name}
                 </h3>
-                <p className="text-sm text-gray-400">Chief Operating Office</p>
+                <p className="text-sm text-gray-400 capitalize">{position}</p>
               </div>
             </div>
           </div>
@@ -84,16 +87,16 @@ const Testimonial = () => {
             >
               <div className="flex sm:flex-row flex-col sm:items-center w-full sm:justify-between">
                 <div className="w-2/3">
-                  <h3 className="md:text-2xl sm:text-xl text-lg font-semibold text-gray-300 font-secondary">
-                    Android App Development
+                  <h3 className="capitalize md:text-2xl sm:text-xl text-lg font-semibold text-gray-300 font-secondary">
+                    {title}
                   </h3>
                   <span className="text-gray-500 font-primary md:text-lg sm:text-sm text-xs">
-                    via Upwork - Mar 4, 2015 - Aug 30, 2021 test{" "}
+                    {moreInfo}
                   </span>
                 </div>
 
                 <div className="h-8 w-28 sm:m-0 mt-5 text-xs flex justify-center items-center rounded-md btn-shadow">
-                  <i className="rating">⭐⭐⭐⭐⭐</i>
+                  <i className="rating">{rating}</i>
                 </div>
               </div>
 
@@ -106,11 +109,7 @@ const Testimonial = () => {
 
               <div className="">
                 <p className="w-full text-gray-400 font-medium font-primary md:text-lg text-base leading-7">
-                  Throughout the development process, communication was
-                  seamless. I was kept informed at every stage, and any
-                  questions or concerns I had were addressed promptly. The team
-                  was highly professional and responsive, making it a
-                  collaborative and enjoyable partnership.
+                  {description}
                 </p>
               </div>
             </div>
