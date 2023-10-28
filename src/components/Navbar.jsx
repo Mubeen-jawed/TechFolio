@@ -277,13 +277,23 @@ const Navbar = (props) => {
               width: "370px",
             }}
           >
-            <div>
-              <div className="flex w-full justify-between items-center">
-                <img
-                  src="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/08/logo.png"
-                  alt="profile-img"
-                  className=""
-                />
+                        <div className="max-[350px]:w-5/6 w-full">
+              <div className="flex justify-between items-center">
+                <a
+                  href="/"
+                  className="nav-first-wrapper pl-3 flex items-center mb-3"
+                >
+                  <img
+                    src={profilePhoto}
+                    alt="profile-img"
+                    className="w-10"
+                    style={{ minWidth: "70px" }}
+                  />
+
+                  <h4 className="sm:text-lg text-md pl-2 uppercase tracking-wider font-normal font-primary">
+                    Mubeen
+                  </h4>
+                </a>{" "}
                 <button
                   className="w-12 h-12 flex justify-center items-center rounded-full btn-shadow"
                   onClick={() => setHamBurgerClick(false)}
@@ -292,11 +302,8 @@ const Navbar = (props) => {
                 </button>
               </div>
 
-              <p className="leading-8 font-primary text-gray-400 w-11/12 py-5">
-                Inbio is a all in one personal portfolio WordPress theme. You
-                can customize everything.
-              </p>
             </div>
+
 
             <div className="border-t text-gray-300 border-gray-700 border-b py-1 pb-20">
               <ul className="flex flex-col justify-evenly h-72 font-semibold font-secondary text-sm text-gray-300">
