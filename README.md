@@ -5,7 +5,8 @@
 
 <p align="center">
   <kbd>
-    <img src="https://github.com/Mubeen-jawed/techfolio/assets/110166209/d35e07ea-68e0-466f-a4f7-dc6fc894c92d"></img>
+    <img src="![techfolio-vid](https://github.com/Mubeen-jawed/techfolio/assets/110166209/8321e254-1de4-4a76-9dbf-046f5acdea88)
+"></img>
   </kbd>
 </p>
 
@@ -39,7 +40,7 @@ Created something awesome for your fork of the portfolio and want to share it? F
 ✔️ Blogs\
 ✔️ Footer\
 
-To view a live example, **[click here](https://mubeen-jawed.vercel.app/)**.
+To view a live example, **[click here](https://techfolio-template.vercel.app/)**.
 
 
 ## Getting Started
