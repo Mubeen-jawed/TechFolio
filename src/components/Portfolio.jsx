@@ -1,6 +1,8 @@
 import React from "react";
 import PortfolioBox from "./PortfolioBox";
 import portfolio1 from "../assets/portfolio.png";
+import portfolio1 from "../assets/portfolio-img-2.png";
+import portfolio1 from "../assets/portfolio-img-3.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import the CSS for AOS
