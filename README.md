@@ -5,8 +5,7 @@
 
 <p align="center">
   <kbd>
-    <img src="![techfolio-vid](https://github.com/Mubeen-jawed/techfolio/assets/110166209/8321e254-1de4-4a76-9dbf-046f5acdea88)
-"></img>
+    <img src="https://github.com/Mubeen-jawed/techfolio/assets/110166209/8321e254-1de4-4a76-9dbf-046f5acdea88"></img>
   </kbd>
 </p>
 
