@@ -1,6 +1,6 @@
 # TechFolio ⚡️
 
-## A clean, beautiful and responsive portfolio template for Developers!
+## Modern and Professional Open-Source Portfolio Website for Tech Professinals!
 
 
 <p align="center">
@@ -10,18 +10,16 @@
 </p>
 
 
-Just change `src/portfolio.js` to get your personal portfolio. Customize portfolio theme by using your own color scheme globally in the  `src/_globalColor.scss` file. Feel free to use it as-is or personalize it as much as you want.
+Just change `src/App.jss` to get your personal portfolio. Feel free to use it as-is or personalize it as much as you want.
 
-If you'd like to **contribute** and make this much better for other users, have a look at [Issues](https://github.com/saadpasta/developerFolio/issues).
+If you'd like to **contribute** and make this much better for other users, have a look at [Issues](https://github.com/Mubeen-jawed/techfolio/issues).
 
-Created something awesome for your fork of the portfolio and want to share it? Feel free to open a [pull request](https://github.com/saadpasta/developerFolio/pulls).
+Created something awesome for your fork of the portfolio and want to share it? Feel free to open a [pull request](https://github.com/Mubeen-jawed/techfolio/pulls).
 
 ## Table of Contents
 - [Sections](#sections)
 - [Getting Started](#getting-started)
 - [How to Use](#how-to-use)
-- [Linking portfolio to GitHub](#linking-portfolio-to-github)
-- [Linking blogs section to Medium](#linking-blogs-section-to-medium)
 - [Change and Customize](#change-and-customize-every-section-according-to-your-need)
 - [Deployment](#deployment)
 - [Technologies Used](#technologies-used)
@@ -31,13 +29,13 @@ Created something awesome for your fork of the portfolio and want to share it? F
 
 ## Portfolio Sections
 ✔️ Summary and About me\
-✔️ Features (What services you provide)\
+✔️ Features\
 ✔️ Portfolio\
 ✔️ Resume\
 ✔️ Testimonial\
 ✔️ Pricing\
 ✔️ Blogs\
-✔️ Footer\
+✔️ Footer
 
 To view a live example, **[click here](https://techfolio-template.vercel.app/)**.
 
@@ -46,38 +44,25 @@ To view a live example, **[click here](https://techfolio-template.vercel.app/)**
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-You'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer or use [Docker](https://www.docker.com/products/docker-desktop).
+You'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer.
 
 ```
 node@v10.16.0 or higher
 npm@6.9.0 or higher
 git@2.17.1 or higher
 ```
-### Docker Commands
-
-```
-1) BUILD IMAGE : docker build -t developerfolio:latest .
-2) RUN IMAGE: docker run -t -p 3000:3000 developerfolio:latest
-```
 
 
 ## How To Use 
 
-From your command line, clone and run developerFolio:
+From your command line, clone and run techfolio:
 
 ```bash
 # Clone this repository
 git clone https://github.com/Mubeen-jawed/Portfolio-Website.git
 
 # Go into the repository
-cd developerFolio
-
-# Setup default environment variables
-
-# For Linux
-cp env.example .env
-# For Windows
-copy env.example .env
+cd techfolio
 
 # Install dependencies
 npm install
@@ -88,9 +73,6 @@ npm start
 
 ```
 
-* For Github Action, change the environment variable `MEDIUM_USERNAME` in `.github/workflows/deploy.yml`
-
-Set `displayMediumBlogs` to true or false in portofolio.js to display fetched Medium blogs, defaults to true.
 
 ## Change and customize every section according to your need.
 
