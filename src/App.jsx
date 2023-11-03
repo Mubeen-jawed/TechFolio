@@ -23,13 +23,13 @@ const App = () => {
   const [bodyClick, setBodyClick] = useState(false);
   const [onHireMeClick, setOnHireMeClick] = useState(true);
 
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading time or add actual loading logic here
-    setTimeout(() => {
-      setIsLoading(false); // Set isLoading to false when your website is ready
-    }, 2000);
+    window.onload = () => {
+      // The entire page has loaded, so hide the loader.
+      setIsLoading(false);
+    };
   }, []);
 
   const hireMeClick = (childStateValue) => {
@@ -150,11 +150,12 @@ const App = () => {
 
   return (
     <>
-      <Navbar bodyClick={bodyClick} onHireMeClick={hireMeClick} />
       {isLoading ? (
         <Spinner />
       ) : (
         <>
+          <Navbar bodyClick={bodyClick} onHireMeClick={hireMeClick} />
+
           <Home
             name={name}
             profession={profession}
