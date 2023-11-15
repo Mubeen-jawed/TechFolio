@@ -10,7 +10,7 @@
 </p>
 
 
-Just change `src/App.jss` to get your personal portfolio. Feel free to use it as-is or personalize it as much as you want.
+Just change `src/App.jsx` to get your personal portfolio. Feel free to use it as-is or personalize it as much as you want.
 
 If you'd like to **contribute** and make this much better for other users, have a look at [Issues](https://github.com/Mubeen-jawed/techfolio/issues).
 
