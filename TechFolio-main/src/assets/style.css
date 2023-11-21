@@ -1,0 +1,190 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #212428;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #212428 inset !important;
+  -webkit-text-fill-color: rgb(229 231 235);
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3a3a;
+}
+
+::-webkit-scrollbar-track {
+  background: #181a1d;
+}
+
+/* .overflow-hidden {
+  overflow: hidden;
+} */
+
+.font-primary {
+  font-family: "Poppins", sans-serif;
+}
+
+.font-secondary {
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn-shadow {
+  box-shadow: 10px 10px 19px #17181b, -10px -10px 19px #2b2e33;
+}
+
+.navbar-shadow {
+  box-shadow: 5px 5px 10px #1a1b1f, -10px -10px 19px #2b2e33;
+}
+
+/* .btn-shadow-hover:hover {
+  box-shadow: 10px 10px 19px #17181b, -10px -10px 19px #2b2e33;
+} */
+
+.nav-second-wrapper li {
+  transition: all 0.5s;
+}
+
+.feature-box i {
+  color: #ff014f;
+}
+
+.feature-box {
+  position: relative;
+  background-image: linear-gradient(144deg, #1e2024, #23272b);
+  transition: all 0.2s;
+  font-weight: 600;
+  transition: all 1s;
+}
+
+.feature-box:hover {
+  background-image: linear-gradient(144deg, #181818, #131313);
+}
+
+.nav-second-wrapper li:hover {
+  color: rgb(220, 38, 38);
+  cursor: pointer;
+}
+
+.red-text {
+  color: #f9004d;
+}
+
+.inner-shadow {
+  box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset,
+    -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
+}
+
+.progress-bar-shadow {
+  box-shadow: inset 8px 8px 16px #00000075, inset -8px -8px 16px #383e4575;
+}
+
+.progress-bar-inner-color {
+  background: linear-gradient(145deg, #6a67c0 0%, #fc636b 100%);
+}
+
+.testimonial-img {
+  width: 500px;
+}
+
+.feather {
+  font-family: "feather" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.hireme {
+  left: 5%;
+  right: 5%;
+}
+
+.pricing-btn:hover {
+  box-shadow: 10px 10px 19px #17181b, -10px -10px 19px #2b2e33;
+  color: #ff014f;
+}
+
+.pricing-btn-click {
+  box-shadow: 10px 10px 19px #17181b, -10px -10px 19px #2b2e33;
+  color: #ff014f;
+}
+
+/* Media Queries */
+
+/* xl */
+
+@media (min-width: 1280px) {
+  .testimonial-first-container {
+    height: 480px;
+    width: 100%;
+  }
+
+  .testimonial-img {
+    width: 468px;
+  }
+
+  .hireme {
+    left: 20%;
+    right: 20%;
+  }
+}
+
+/* lg */
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .testimonial-first-container {
+    height: 440px;
+    width: 700px;
+  }
+
+  .testimonial-img {
+    width: 368px;
+  }
+
+  .hireme {
+    left: 20%;
+    right: 20%;
+  }
+}
+
+/* md */
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .testimonial-first-container {
+    width: 100%;
+  }
+
+  .testimonial-img {
+    width: 150px;
+  }
+
+  .hireme {
+    left: 10%;
+    right: 10%;
+  }
+}
