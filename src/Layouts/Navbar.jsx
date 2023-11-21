@@ -7,6 +7,7 @@ import { FiGithub } from "react-icons/fi";
 import { FiTwitter } from "react-icons/fi";
 import { FiLinkedin } from "react-icons/fi";
 import profilePhoto from "../assets/profile-img.svg";
+import ThemeToggler from "../Elements/ThemeToggler";
 
 const Navbar = (props) => {
   const [hireMeClick, setHireMeClick] = useState(false);
@@ -157,10 +158,12 @@ const Navbar = (props) => {
               setHireMeClick(true);
               props.onHireMeClick(hireMeClick);
             }}
-            className="red-text transition-all duration-500 sm:w-32 hover:mb-2 w-22 max-[450px]:w-22 max-[450px]:font-light max-[450px]:py-2 rounded-md text-[10px] py-3 px-2 sm:px-0 btn-shadow  sm:font-medium font-primary sm:text-sm tracking-wider "
+            className="red-text transition-all duration-500 sm:w-32 hover:mb-2 w-22 max-[450px]:w-[84px] max-[450px]:text-[8px] max-[450px]:px-0 max-[450px]:font-light max-[450px]:py-2 rounded-md text-[10px] py-3 px-2 sm:px-0 btn-shadow  sm:font-medium font-primary sm:text-sm tracking-wider "
           >
             CONTACT ME
           </button>
+
+          {/* <ThemeToggler /> */}
 
           {/* Hire Me Button Click UI */}
 
