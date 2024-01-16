@@ -26,10 +26,9 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    window.onload = () => {
-      // The entire page has loaded, so hide the loader.
-      setIsLoading(false);
-    };
+     setTimeout(() => {
+      setIsLoading(true)
+    }, 500)
   }, []);
 
   const hireMeClick = (childStateValue) => {
